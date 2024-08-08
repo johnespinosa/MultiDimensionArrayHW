@@ -12,13 +12,7 @@ public class MultiDimensionArrayHW {
 	 * @return - return a 2D array with 1s in each element that numRows by numCols
 	 */
 	public static void doubleArray(int [][] arr) {
-		if(arr == null)
-			return;
-		for(int i = 0; i < arr.length; i++) {
-			for(int j = 0; j < arr[0].length; j++) {
-				arr[i][j] *= 2;
-			}
-		}
+		/*your code here*/
 	}
 	
 	/**
@@ -28,18 +22,8 @@ public class MultiDimensionArrayHW {
 	 * @return - sum of arrays or null
 	 */
 	public static int [][] addArrays(int [][] arr1, int [][] arr2) {
-		if(arr1 == null || arr2 == null || arr1.length != arr2.length || 
-				arr1[0].length != arr2[0].length )
-			return null;
-		
-		int [][] resultArr = new int [arr1.length][arr1[0].length];
-		for(int i = 0; i < arr1.length; i++) {
-			for(int j = 0; j < arr1[0].length; j++) {
-				resultArr[i][j] = arr1[i][j] + arr2[i][j];
-			}
-		}
-		
-		return resultArr;
+		/*your code here*/
+		return null;
 	}
 	
 	
@@ -51,13 +35,8 @@ public class MultiDimensionArrayHW {
 	 * @return - return a 2D array with 1s in each element that numRows by numCols
 	 */
 	public static int [][] create2DArray(int numRows, int numCols) {
-		if(numRows < 1 || numCols < 1)
-			return null;
-		int [][] newArr = new int [numRows][numCols];
-		for(int row = 0; row < numRows; row++)
-			for(int col = 0; col < numCols; col++)
-				newArr[row][col] = 1;
-		return newArr;
+		/*your code here*/
+		return null;
 	}
 	
 	
@@ -68,17 +47,8 @@ public class MultiDimensionArrayHW {
 	 * @return - the number of ways elements of arr can be paired
 	 */
 	public static int countNumPairs(int [] arr) {
-		if(arr == null)
-			return -1;
-		int numPairs = 0;
-		for(int firstIndex = 0; firstIndex < arr.length; firstIndex++) {
-			// pair with numbers after the 1st number in the pair
-			for(int secondIndex = firstIndex + 1; secondIndex < arr.length; secondIndex++){
-				numPairs++;
-			}
-			System.out.println(); // put pairs with a different first item in a new line
-		}
-		return numPairs;
+		/*your code here*/
+		return -10;
 	}
 	
 	/**
@@ -99,22 +69,8 @@ public class MultiDimensionArrayHW {
 	 * @return - all possible pairs of the integers in arr in a new 2-d array
 	 */
 	public static int[][] getPairs(int [] arr) {
-		if(arr == null)
-			return null;
-		int numPairs = countNumPairs(arr);
-		int [][] pairs = new int [numPairs][2];
-		
-		int pairIndex = 0;
-		for(int firstIndex = 0; firstIndex < arr.length - 1; firstIndex++) {
-			for(int secondIndex = firstIndex + 1; secondIndex < arr.length; secondIndex++) {
-				int firstNumInPair = arr[firstIndex];
-				int secondNumInPair = arr[secondIndex];
-				pairs[pairIndex][0] = firstNumInPair;
-				pairs[pairIndex][1] = secondNumInPair;
-				pairIndex++;
-			}
-		}	
-		return pairs;
+		/*your code here*/
+		return null;
 	}
 	
 }
