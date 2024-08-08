@@ -72,7 +72,8 @@ public class MultiDimensionArrayHW {
 	 * for example 1, 2, 3, 4
 	 * Would have the pairs
 	 *  {{1,2},{1,3},{1,4},{2,3},{2,4}, {3,4}}
-	 * 
+         *  pairs[0][0] -> 1
+	 *  pairs[0][1] -> 2
 	 * the pairs can be in any order but the elements of the pair must be in non-decreasing 
 	 * order. For example {2,1} is a bad pair
 	 * 
