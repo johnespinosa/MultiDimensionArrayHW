@@ -42,6 +42,7 @@ public class MultiDimensionArrayHW {
 	/**
 	 * Take an array of integers and find how many different ways those elements 
 	 * can be paired. If arr is null return -1.
+         * You can assume arr will not repeat elements {1,1,2} will not be passed in. 
 	 * @param arr - an array of integers
 	 * @return - the number of ways elements of arr can be paired
 	 */
