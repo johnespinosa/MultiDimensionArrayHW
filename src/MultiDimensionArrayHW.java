@@ -68,8 +68,9 @@ public class MultiDimensionArrayHW {
 	 * where the first index is the index of the pair, the second index 0 is the first element
 	 * in the pair and the second index being 1 is the second element of the pair.
 	 * Pairs should always have the smallest element in the pair be in the first position
-	 * 
-	 * for example 1, 2, 3, 4
+	 * You can assume that no number in the input int array is repeated. for example 1,2,2,3 
+         * would not be given to you. 
+	 * valid example: {1, 2, 3, 4}
 	 * Would have the pairs
 	 *  {{1,2},{1,3},{1,4},{2,3},{2,4}, {3,4}}
          *  pairs[0][0] -> 1
