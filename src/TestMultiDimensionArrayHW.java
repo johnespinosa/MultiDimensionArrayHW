@@ -59,7 +59,7 @@ public class TestMultiDimensionArrayHW {
 		int [][] sumArr = MultiDimensionArrayHW.addArrays(arr1, arr2);
 		
 		// new array is created
-		Assert.assertTrue(arr1 != sumArr && arr1 != sumArr);
+		Assert.assertTrue(arr1 != sumArr && arr2 != sumArr);
 		
 		// arr1 is unchanged
 		for(int i = 0; i < arr1.length; i++)
