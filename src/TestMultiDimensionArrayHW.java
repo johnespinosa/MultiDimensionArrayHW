@@ -100,29 +100,46 @@ public class TestMultiDimensionArrayHW {
 	}
 	
 	@Test
+	public void tesPairExists() {
+		int [][] pairs = {{1,2},{2,2}};
+		int [][] otherPairs = {{2,2}};
+		Assert.assertTrue(MultiDimensionArrayHW.pairExists(1,2,pairs));
+		Assert.assertTrue(MultiDimensionArrayHW.pairExists(2,2,pairs));
+		Assert.assertFalse(MultiDimensionArrayHW.pairExists(2,3,pairs));
+		Assert.assertTrue(MultiDimensionArrayHW.pairExists(2,2,otherPairs));
+		Assert.assertFalse(MultiDimensionArrayHW.pairExists(2,3,otherPairs));
+	}
+	
+	@Test
 	public void testGetPairs() {
 		int [] myArr = {1,2,3,4};
 		int numPairs = MultiDimensionArrayHW.countNumPairs(myArr);
 		int [][] pairs = MultiDimensionArrayHW.getPairs(myArr);
 		Assert.assertEquals(numPairs, pairs.length);
-		Assert.assertTrue(pairExists(1,2,pairs));
-		Assert.assertTrue(pairExists(1,3,pairs));
-		Assert.assertTrue(pairExists(1,4,pairs));
-		Assert.assertTrue(pairExists(2,3,pairs));
-		Assert.assertTrue(pairExists(2,4,pairs));
-		Assert.assertTrue(pairExists(3,4,pairs));
+		Assert.assertTrue(MultiDimensionArrayHW.pairExists(1,2,pairs));
+		Assert.assertTrue(MultiDimensionArrayHW.pairExists(1,3,pairs));
+		Assert.assertTrue(MultiDimensionArrayHW.pairExists(1,4,pairs));
+		Assert.assertTrue(MultiDimensionArrayHW.pairExists(2,3,pairs));
+		Assert.assertTrue(MultiDimensionArrayHW.pairExists(2,4,pairs));
+		Assert.assertTrue(MultiDimensionArrayHW.pairExists(3,4,pairs));
+	}
+	
+	public void testGetPairs2() {
+		int [] myArr = {1,4,3,2};
+		int numPairs = MultiDimensionArrayHW.countNumPairs(myArr);
+		int [][] pairs = MultiDimensionArrayHW.getPairs(myArr);
+		Assert.assertEquals(numPairs, pairs.length);
+		Assert.assertTrue(MultiDimensionArrayHW.pairExists(1,2,pairs));
+		Assert.assertTrue(MultiDimensionArrayHW.pairExists(1,3,pairs));
+		Assert.assertTrue(MultiDimensionArrayHW.pairExists(1,4,pairs));
+		Assert.assertTrue(MultiDimensionArrayHW.pairExists(2,3,pairs));
+		Assert.assertTrue(MultiDimensionArrayHW.pairExists(2,4,pairs));
+		Assert.assertTrue(MultiDimensionArrayHW.pairExists(3,4,pairs));
 	}
 	
 	@Test
 	public void testGetPairsNull() {
 		Assert.assertNull(MultiDimensionArrayHW.getPairs(null));
-	}
-	
-	public static boolean pairExists(int a, int b, int [][] pairs) {
-		for(int i = 0; i < pairs.length; i++)
-			if(pairs[i][0] == a && pairs[i][1] == b)
-				return true;
-		return false;
 	}
 
 }

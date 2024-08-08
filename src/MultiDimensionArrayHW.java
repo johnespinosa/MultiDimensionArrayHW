@@ -52,6 +52,19 @@ public class MultiDimensionArrayHW {
 	}
 	
 	/**
+	 * See if a pair (a,b) exists in a pairs array. assumes a <= b and that each 
+	 * pair in pairs has has the same constraint
+	 * @param a - first element in the pair
+	 * @param b - second element in the pair
+	 * @param pairs - list of pairs
+	 * @return true if (a,b) is in pairs, false otherwise.
+	 */
+	public static boolean pairExists(int a, int b, int [][] pairs) {
+		/*your code here*/
+		return false;
+	}
+	
+	/**
 	 * List all possible pairings of numbers in an array using a 2-d array
 	 * where the first index is the index of the pair, the second index 0 is the first element
 	 * in the pair and the second index being 1 is the second element of the pair.
