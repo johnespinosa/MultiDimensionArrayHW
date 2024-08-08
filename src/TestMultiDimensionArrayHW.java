@@ -100,7 +100,7 @@ public class TestMultiDimensionArrayHW {
 	}
 	
 	@Test
-	public void tesPairExists() {
+	public void testPairExists() {
 		int [][] pairs = {{1,2},{2,2}};
 		int [][] otherPairs = {{2,2}};
 		Assert.assertTrue(MultiDimensionArrayHW.pairExists(1,2,pairs));
