@@ -6,13 +6,25 @@ public class MultiDimensionArrayHW {
 
 
 	/**
+	 * Create a NEW 2D int array with numRows rows by numCols columns populated with 1 for each element.
+	 * The arrays passed into the function should remain unchanged.
+	 * @param numRows - number of rows in the new array
+	 * @param numCols - number of columns in the 2D array
+	 * @return - return a 2D array with 1s in each element that numRows by numCols
+	 */
+	public static int [][] create2DArray(int numRows, int numCols) {
+		/*your code here*/
+		return null;
+	}
+	
+	/**
 	 * Create a new 2D int array with numRows rows by numCols columns populated with 1 for each element
 	 * @param numRows - number of rows in the new array
 	 * @param numCols - number of columns in the 2D array
 	 * @return - return a 2D array with 1s in each element that numRows by numCols
 	 */
 	public static void doubleArray(int [][] arr) {
-		/*your code here*/
+		/* your code here */
 	}
 	
 	/**
@@ -22,19 +34,6 @@ public class MultiDimensionArrayHW {
 	 * @return - sum of arrays or null
 	 */
 	public static int [][] addArrays(int [][] arr1, int [][] arr2) {
-		/*your code here*/
-		return null;
-	}
-	
-	
-	/**
-	 * Create a NEW 2D int array with numRows rows by numCols columns populated with 1 for each element.
-	 * The arrays passed into the function should remain unchanged.
-	 * @param numRows - number of rows in the new array
-	 * @param numCols - number of columns in the 2D array
-	 * @return - return a 2D array with 1s in each element that numRows by numCols
-	 */
-	public static int [][] create2DArray(int numRows, int numCols) {
 		/*your code here*/
 		return null;
 	}
