@@ -18,10 +18,9 @@ public class MultiDimensionArrayHW {
 	}
 	
 	/**
-	 * Create a new 2D int array with numRows rows by numCols columns populated with 1 for each element
-	 * @param numRows - number of rows in the new array
-	 * @param numCols - number of columns in the 2D array
-	 * @return - return a 2D array with 1s in each element that numRows by numCols
+	 * Pass in an array of integers and double each of the values in 
+	 * the array that was passed in. Nothing is returned.
+	 * @param arr - array to double the values of
 	 */
 	public static void doubleArray(int [][] arr) {
 		/* your code here */
