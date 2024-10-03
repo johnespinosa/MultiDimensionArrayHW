@@ -1,7 +1,7 @@
 
 public class MultiDimensionArrayHW {
 	public static void main(String[] args) {	
-
+		
 	}
 
 
@@ -13,17 +13,30 @@ public class MultiDimensionArrayHW {
 	 * @return - return a 2D array with 1s in each element that numRows by numCols
 	 */
 	public static int [][] create2DArray(int numRows, int numCols) {
-		/*your code here*/
-		return null;
+		
+		int [][] arr = new int[numRows][numCols];
+		for(int row = 0; row < numRows; row++) {
+			for(int column = 0; column < numCols; column++) {
+				arr[row][column] = 1;
+			}
+		}
+		
+		return arr;
 	}
 	
 	/**
 	 * Pass in an array of integers and double each of the values in 
 	 * the array that was passed in. Nothing is returned.
+	 * You can assume arr has the same number of columns in each row
 	 * @param arr - array to double the values of
 	 */
 	public static void doubleArray(int [][] arr) {
-		/* your code here */
+
+		for(int row = 0; row < arr.length; row++) {
+			for(int column = 0; column < arr[row].length; column++) {
+				arr[row][column] *= 2;
+			}
+		}
 	}
 	
 	/**
@@ -63,10 +76,13 @@ public class MultiDimensionArrayHW {
 		return false;
 	}
 	
+	
+	// the power set of {a,b,c} is {{},{a},{b},{c}, {a,b}, {b,c}, {a,c}, {a,b,c}}
+	
 	/**
 	 * List all possible pairings of numbers in an array using a 2-d array
-	 * where the first index is the index of the pair, the second index 0 is the first element
-	 * in the pair and the second index being 1 is the second element of the pair.
+	 * where the first index is the index of the pair, the second index (1) is the first element
+	 * in the pair and the third index (2) is the second element of the pair.
 	 * Pairs should always have the smallest element in the pair be in the first position
 	 * You can assume that no number in the input int array is repeated. for example 1,2,2,3 
          * would not be given to you. 
